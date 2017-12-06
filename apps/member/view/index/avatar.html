@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<title>Bootstrap 101 Template</title>
+<link href="/static/index/css/style.css" rel="stylesheet">
+<!-- Bootstrap -->
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="main-menu">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="">ThinkCMF</a> </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="" title="首页">首页</a></li>
+        <li><a href="download.html" title="PHP问答">PHP问答</a></li>
+        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="user/profile/center.html#" title="案例分享">案例分享<b class="caret"></b><span class="badge badge-important">New</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="appstore/plugins.html" title="前端分享">前端分享</a></li>
+            <li><a href="appstore/themes.html" title="后端分享">后端分享</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="user/profile/center.html#" title="文档">文档<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.kancloud.cn/thinkcmf/doc" title="ThinkCMF5手册(看云)" target="_blank">ThinkCMF5手册(看云)</a></li>
+            <li><a href="docs/cmf/" title="ThinkCMF5手册" target="_blank">ThinkCMF5手册</a></li>
+            <li><a href="http://www.kancloud.cn/thinkcmf/cmf5api" title="ThinkCMF5 API手册" target="_blank">ThinkCMF5 API手册</a></li>
+            <li><a href="docs/cmfx/" title="ThinkCMFX手册" target="_blank">ThinkCMFX手册</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="user/profile/center.html#" title="更多分享">更多分享<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="font/index.html" title="Font Awesome 中文站" target="_blank">Font Awesome 中文站</a></li>
+            <li><a href="http://demo.thinkcmf.com/" title="前台演示" target="_blank">前台演示</a></li>
+            <!--<li><a href="http://demox.thinkcmf.com" title="前台演示2" target="_blank">前台演示2</a></li>-->
+            <li><a href="http://demo.thinkcmf.com/admin" title="后台演示" target="_blank">后台演示</a></li>
+            <li><a href="https://github.com/thinkcmf/thinkcmf/issues" title="问题反馈" target="_blank">问题反馈<i class="fa fa-bug"></i></a></li>
+            <li><a href="roadmap.html" title="路线">路线</a></li>
+            <li><a href="donate.html" title="捐赠我们">捐赠我们</a></li>
+            <li><a href="qq_group.html" title="官方QQ群">官方QQ群</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" id="main-menu-user">
+        <li> <a target="_blank" href="http://zhannei.baidu.com/cse/search?s=17328418840578551067&amp;entry=1"><i class="glyphicon glyphicon-search"></i></a> </li>
+        <li class="login" style=""> <a class="dropdown-toggle notifactions" href="notification.html"> <i class="glyphicon glyphicon-envelope"></i> <span class="count">0</span> </a> </li>
+        <li class="dropdown user login" style="display: list-item;"> <a class="dropdown-toggle user" data-toggle="dropdown" href="user/profile/center.html#"> <img src="/static/index/images/100.jpg" class="headicon" width="30"> <span class="user-nickname">正在输入......</span><b class="caret"></b> </a>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="/member"><i class="glyphicon glyphicon-user"></i> &nbsp;个人中心</a></li>
+            <li><a href="appstore/user/pluginsbought.html"><i class="glyphicon glyphicon-list"></i> &nbsp;我的订单</a></li>
+            <li class="divider"></li>
+            <li><a href="user/index/logout.html"><i class="glyphicon glyphicon-indent-left"></i> &nbsp;退出</a></li>
+          </ul>
+        </li>
+        <li class="dropdown user offline" style="display: none;"> <a class="dropdown-toggle user" data-toggle="dropdown" href="user/profile/center.html#"> <img src="/static/index/images/headicon.png" class="headicon">登录<b class="caret"></b> </a>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="register.html"><i class="fa fa-user"></i> &nbsp;注册</a></li>
+            <li class="divider"></li>
+            <li><a href="plugin/qq_login/qq/login.html"><i class="fa fa-qq"></i> &nbsp;QQ登录</a></li>
+            <li><a href="login.html"><i class="fa fa-sign-in"></i> &nbsp;登录</a></li>
+          </ul>
+        </li>
+        <div class="clear"></div>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container tc-main">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="list-group"> 
+<a class="list-group-item" href="/member/profile"><i class="glyphicon glyphicon-tasks"></i> 修改资料</a> 
+<a class="list-group-item" href="/member/password"><i class="glyphicon glyphicon-lock"></i> 修改密码</a> 
+<a class="list-group-item" href="/member/avatar"><i class="glyphicon glyphicon-user"></i> 编辑头像</a> 
+<a class="list-group-item" href="/member/binding"><i class="glyphicon glyphicon-transfer"></i> 绑定账号</a> 
+<a class="list-group-item" href="/member/score"><i class="glyphicon glyphicon-piggy-bank"></i> 积分金币</a> 
+<a class="list-group-item" href="/member/favorite"><i class="glyphicon glyphicon-star"></i> 我的收藏</a> 
+<a class="list-group-item" href="/member/comment"><i class="glyphicon glyphicon-comment"></i> 我的评论</a> 
+<a class="list-group-item" href="/member/plugin"><i class="glyphicon glyphicon-print"></i> 我的插件</a> 
+<a class="list-group-item" href="/member/theme"><i class="glyphicon glyphicon-send"></i> 我的模板</a> 
+<a class="list-group-item" href="/member/topic"><i class="glyphicon glyphicon-oil"></i> 我的话题</a> 
+<a class="list-group-item" href="/member/member"><i class="glyphicon glyphicon-list"></i> 我的订单</a> 
+<a class="list-group-item" href="/member/case"><i class="glyphicon glyphicon-folder-close"></i> 我的案例</a> 
+        </div>
+    </div>
+        <div class="col-md-9">
+            <div class="tabs">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#one" data-toggle="tab"><i class="glyphicon glyphicon-user"></i> 修改头像</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="one">
+                        <br>
+                                                    <img src="https://q.qlogo.cn/qqapp/101162127/D7383C15B82F8AA7AC94E204BF5B1C0F/100?t=1512465544" class="headicon" width="128"/>
+                                                <input type="file" onchange="avatar_upload(this)" id="avatar_uploder" name="file"/>
+                        <div class="uploaded_avatar_area">
+                            <div class="uploaded_avatar_btns">
+                                <a class="btn btn-primary confirm_avatar_btn" onclick="update_avatar()">确定</a>
+                                <a class="btn" onclick="reloadPage()">取消</a>
+                            </div>
+                        </div>
+                        <p class="help-block">头像支持jpg,png,jpeg格式,文件大小最大不能超过1M</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
+<!-- /container --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 --> 
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
