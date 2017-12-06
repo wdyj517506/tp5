@@ -2,12 +2,14 @@
 namespace app\admin\controller;
 
 use think\Controller;
+// use think\Db;
 
 class Index extends Controller
 {
-    public function index($name = 'thinkphp')
+    public function index($name='index')
     {
-        $this->assign('name', $name);
-        return $this->fetch();
+		// $member = Db::name('member')->find();
+		// $this->assign('member', $member);
+        return $this->fetch('index/'.$name);
     }
 }

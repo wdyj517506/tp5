@@ -18,4 +18,5 @@ return [
         ':name' => ['index/hello', ['method' => 'post']],
     ],
 	'member/:name' => 'member/index/index',
+	'admin/:name' => 'admin/index/index',
 ];

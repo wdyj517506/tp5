@@ -1,536 +1,837 @@
-<!doctype html>
-<html class="no-js">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Amaze UI Admin index Examples {$name}</title>
-<meta name="description" content="这是一个 index 页面">
-<meta name="keywords" content="index">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="renderer" content="webkit">
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-<link rel="icon" type="/static/image/png" href="assets/i/favicon.png">
-<link rel="apple-touch-icon-precomposed" href="/static/assets/i/app-icon72x72@2x.png">
-<meta name="apple-mobile-web-app-title" content="Amaze UI" />
-<link rel="stylesheet" href="/static/assets/css/amazeui.min.css"/>
-<link rel="stylesheet" href="/static/assets/css/admin.css">
-<script src="/static/assets/js/jquery.min.js"></script>
-<script src="/static/assets/js/app.js"></script>
-</head>
-<body>
-<!--[if lte IE 9]><p class="browsehappy">升级你的浏览器吧！ <a href="http://se.360.cn/" target="_blank">升级浏览器</a>以获得更好的体验！</p><![endif]-->
-</head>
-
-<body>
-<header class="am-topbar admin-header">
-  <div class="am-topbar-brand"><img src="/static/assets/i/logo.png"></div>
-
-  <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
-    <ul class="am-nav am-nav-pills am-topbar-nav admin-header-list">
-
-   <li class="am-dropdown tognzhi" data-am-dropdown>
-  <button class="am-btn am-btn-primary am-dropdown-toggle am-btn-xs am-radius am-icon-bell-o" data-am-dropdown-toggle> 消息管理<span class="am-badge am-badge-danger am-round">6</span></button>
-  <ul class="am-dropdown-content">
-  	
-  	
-  	
-    <li class="am-dropdown-header">所有消息都在这里</li>
-
-    
-
-    <li><a href="#">未激活会员 <span class="am-badge am-badge-danger am-round">556</span></a></li>
-    <li><a href="#">未激活代理 <span class="am-badge am-badge-danger am-round">69</span></a></a></li>
-    <li><a href="#">未处理汇款</a></li>
-    <li><a href="#">未发放提现</a></li>
-    <li><a href="#">未发货订单</a></li>
-    <li><a href="#">低库存产品</a></li>
-    <li><a href="#">信息反馈</a></li>
-    
-    
-    
-  </ul>
-</li>
-
- <li class="kuanjie">
- 	
- 	<a href="#">会员管理</a>          
- 	<a href="#">奖金管理</a> 
- 	<a href="#">订单管理</a>   
- 	<a href="#">产品管理</a> 
- 	<a href="#">个人中心</a> 
- 	 <a href="#">系统设置</a>
- </li>
-
- <li class="soso">
- 	
-<p>   
-	
-	<select data-am-selected="{btnWidth: 70, btnSize: 'sm', btnStyle: 'default'}">
-          <option value="b">全部</option>
-          <option value="o">产品</option>
-          <option value="o">会员</option>
-          
-        </select>
-
-</p>
-
-<p class="ycfg"><input type="text" class="am-form-field am-input-sm" placeholder="圆角表单域" /></p>
-<p><button class="am-btn am-btn-xs am-btn-default am-xiao"><i class="am-icon-search"></i></button></p>
- </li>
+    <meta charset="UTF-8">
+    <title>Director | Dashboard</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta name="description" content="Developed By M Abdur Rokib Promy">
+    <meta name="keywords" content="Admin, Bootstrap 3, Template, Theme, Responsive">
+    <!-- bootstrap 3.0.2 -->
+    <link href="/static/admin/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- font Awesome -->
+    <link href="/static/admin/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="/static/admin/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Morris chart -->
+    <link href="/static/admin/css/morris/morris.css" rel="stylesheet" type="text/css" />
+    <!-- jvectormap -->
+    <link href="/static/admin/css/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <!-- Date Picker -->
+    <link href="/static/admin/css/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+    <!-- fullCalendar -->
+    <!-- <link href="/static/admin/css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" /> -->
+    <!-- Daterange picker -->
+    <link href="/static/admin/css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link href="/static/admin/css/iCheck/all.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap wysihtml5 - text editor -->
+    <!-- <link href="/static/admin/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" /> -->
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- Theme style -->
+    <link href="/static/admin/css/style.css" rel="stylesheet" type="text/css" />
 
 
 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+          <![endif]-->
 
-      <li class="am-hide-sm-only" style="float: right;"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
-    </ul>
-  </div>
-</header>
+          <style type="text/css">
 
-<div class="am-cf admin-main"> 
+          </style>
+      </head>
+      <body class="skin-black">
+        <!-- header logo: style can be found in header.less -->
+        <header class="header">
+            <a href="index.html" class="logo">
+                Moon Talk
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope"></i>
+                                <span class="label label-success">4</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 4 messages</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li><!-- start message -->
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="/static/admin/img/26115.jpg" class="img-circle" alt="User Image"/>
+                                                </div>
+                                                <h4>
+                                                    Support Team
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                                <small class="pull-right"><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </a>
+                                        </li><!-- end message -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="/static/admin/img/26115.jpg" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Director Design Team
 
-<div class="nav-navicon admin-main admin-sidebar">
-    
-    
-    <div class="sideMenu am-icon-dashboard" style="color:#aeb2b7; margin: 10px 0 0 0;"> 欢迎系统管理员：清风抚雪</div>
-    <div class="sideMenu">
-      <h3 class="am-icon-flag"><em></em> <a href="#">商品管理</a></h3>
-      <ul>
-        <li><a href="">商品列表</a></li>
-        <li class="func" dataType='html' dataLink='msn.htm' iconImg='images/msn.gif'>添加新商品</li>
-        <li>商品分类</li>
-        <li>用户评论</li>
-        <li>商品回收站</li>
-        <li>库存管理 </li>
-      </ul>
-      <h3 class="am-icon-cart-plus"><em></em> <a href="#"> 订单管理</a></h3>
-      <ul>
-        <li>订单列表</li>
-        <li>合并订单</li>
-        <li>订单打印</li>
-        <li>添加订单</li>
-        <li>发货单列表</li>
-        <li>换货单列表</li>
-      </ul>
-      <h3 class="am-icon-users"><em></em> <a href="#">会员管理</a></h3>
-      <ul>
-        <li>会员列表 </li>
-        <li>未激活会员</li>
-        <li>团队系谱图</li>
-        <li>会员推荐图</li>
-        <li>推荐列表</li>
-      </ul>
-      <h3 class="am-icon-volume-up"><em></em> <a href="#">信息通知</a></h3>
-      <ul>
-        <li>站内消息 /留言 </li>
-        <li>短信</li>
-        <li>邮件</li>
-        <li>微信</li>
-        <li>客服</li>
-      </ul>
-      <h3 class="am-icon-gears"><em></em> <a href="#">系统设置</a></h3>
-      <ul>
-        <li>数据备份</li>
-        <li>邮件/短信管理</li>
-        <li>上传/下载</li>
-        <li>权限</li>
-        <li>网站设置</li>
-        <li>第三方支付</li>
-        <li>提现 /转账 出入账汇率</li>
-        <li>平台设置</li>
-        <li>声音文件</li>
-      </ul>
-    </div>
-    <!-- sideMenu End --> 
-    
-    <script type="text/javascript">
-			jQuery(".sideMenu").slide({
-				titCell:"h3", //鼠标触发对象
-				targetCell:"ul", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
-				effect:"slideDown", //targetCell下拉效果
-				delayTime:300 , //效果时间
-				triggerTime:150, //鼠标延迟触发时间（默认150）
-				defaultPlay:true,//默认是否执行效果（默认true）
-				returnDefault:true //鼠标从.sideMen移走后返回默认状态（默认false）
-				});
-		</script> 
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                                <small class="pull-right"><i class="fa fa-clock-o"></i> 2 hours</small>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="/static/admin/mg/avatar.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Developers
 
-    
-    
-    
-    
-    
-    
-    
-</div>
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                                <small class="pull-right"><i class="fa fa-clock-o"></i> Today</small>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="/static/admin/img/26115.jpg" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Sales Department
 
-<div class=" admin-content">
-	
-		<div class="daohang">
-			<ul>
-				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs"> 首页 </li>
-				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs">帮助中心<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a></button></li>
-				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs">奖金管理<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a></button></li>
-				<li><button type="button" class="am-btn am-btn-default am-radius am-btn-xs">产品管理<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close="">×</a></button></li>
-				
-				
-			</ul>
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                                <small class="pull-right"><i class="fa fa-clock-o"></i> Yesterday</small>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="/static/admin/img/avatar.png" class="img-circle" alt="user image"/>
+                                                </div>
+                                                <h4>
+                                                    Reviewers
 
-       
+                                                </h4>
+                                                <p>Why not buy a new awesome theme?</p>
+                                                <small class="pull-right"><i class="fa fa-clock-o"></i> 2 days</small>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">See All Messages</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-tasks"></i>
+                                <span class="label label-danger">9</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 9 tasks</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li><!-- Task item -->
+                                            <a href="#">
+                                                <h3>
+                                                    Design some buttons
+                                                    <small class="pull-right">20%</small>
+                                                </h3>
+                                                <div class="progress progress-striped xs">
+                                                    <div class="progress-bar progress-bar-success" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!-- end task item -->
+                                        <li><!-- Task item -->
+                                            <a href="#">
+                                                <h3>
+                                                    Create a nice theme
+                                                    <small class="pull-right">40%</small>
+                                                </h3>
+                                                <div class="progress progress-striped xs">
+                                                    <div class="progress-bar progress-bar-danger" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">40% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!-- end task item -->
+                                        <li><!-- Task item -->
+                                            <a href="#">
+                                                <h3>
+                                                    Some task I need to do
+                                                    <small class="pull-right">60%</small>
+                                                </h3>
+                                                <div class="progress progress-striped xs">
+                                                    <div class="progress-bar progress-bar-info" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!-- end task item -->
+                                        <li><!-- Task item -->
+                                            <a href="#">
+                                                <h3>
+                                                    Make beautiful transitions
+                                                    <small class="pull-right">80%</small>
+                                                </h3>
+                                                <div class="progress progress-striped xs">
+                                                    <div class="progress-bar progress-bar-warning" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">80% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li><!-- end task item -->
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#">View all tasks</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i>
+                                <span>Jane Doe <i class="caret"></i></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
+                                <li class="dropdown-header text-center">Account</li>
 
-	
-</div>
-	
-	
+                                <li>
+                                    <a href="#">
+                                    <i class="fa fa-clock-o fa-fw pull-right"></i>
+                                        <span class="badge badge-success pull-right">10</span> Updates</a>
+                                    <a href="#">
+                                    <i class="fa fa-envelope-o fa-fw pull-right"></i>
+                                        <span class="badge badge-danger pull-right">5</span> Messages</a>
+                                    <a href="#"><i class="fa fa-magnet fa-fw pull-right"></i>
+                                        <span class="badge badge-info pull-right">3</span> Subscriptions</a>
+                                    <a href="#"><i class="fa fa-question fa-fw pull-right"></i> <span class=
+                                        "badge pull-right">11</span> FAQ</a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                    <li>
+                                        <a href="#">
+                                        <i class="fa fa-user fa-fw pull-right"></i>
+                                            Profile
+                                        </a>
+                                        <a data-toggle="modal" href="#modal-user-settings">
+                                        <i class="fa fa-cog fa-fw pull-right"></i>
+                                            Settings
+                                        </a>
+                                        </li>
+
+                                        <li class="divider"></li>
+
+                                        <li>
+                                            <a href="#"><i class="fa fa-ban fa-fw pull-right"></i> Logout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <div class="wrapper row-offcanvas row-offcanvas-left">
+                    <!-- Left side column. contains the logo and sidebar -->
+                    {include file='common/admin_left'}
+                    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >免费网站模板</a></div>
+
+                    <aside class="right-side">
+
+                <!-- Main content -->
+                <section class="content">
+
+                    <div class="row" style="margin-bottom:5px;">
 
 
-<div class="admin">
-	
+                        <div class="col-md-3">
+                            <div class="sm-st clearfix">
+                                <span class="sm-st-icon st-red"><i class="fa fa-check-square-o"></i></span>
+                                <div class="sm-st-info">
+                                    <span>3200</span>
+                                    已经发布
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="sm-st clearfix">
+                                <span class="sm-st-icon st-violet"><i class="fa fa-envelope-o"></i></span>
+                                <div class="sm-st-info">
+                                    <span>2200</span>
+                                    并发信息
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="sm-st clearfix">
+                                <span class="sm-st-icon st-blue"><i class="fa fa-dollar"></i></span>
+                                <div class="sm-st-info">
+                                    <span>100,320</span>
+                                    本月利润
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="sm-st clearfix">
+                                <span class="sm-st-icon st-green"><i class="fa fa-paperclip"></i></span>
+                                <div class="sm-st-info">
+                                    <span>4567</span>
+                                    所有文件
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-	
-	
-   
-   <div class="admin-index">
-      <dl data-am-scrollspy="{animation: 'slide-right', delay: 100}">
-        <dt class="qs"><i class="am-icon-users"></i></dt>
-        <dd>455</dd>
-        <dd class="f12">团队数量</dd>
-      </dl>
-      <dl data-am-scrollspy="{animation: 'slide-right', delay: 300}">
-        <dt class="cs"><i class="am-icon-area-chart"></i></dt>
-        <dd>455</dd>
-        <dd class="f12">今日收入</dd>
-      </dl>
-      <dl data-am-scrollspy="{animation: 'slide-right', delay: 600}">
-        <dt class="hs"><i class="am-icon-shopping-cart"></i></dt>
-        <dd>455</dd>
-        <dd class="f12">商品数量</dd>
-      </dl>
-      <dl data-am-scrollspy="{animation: 'slide-right', delay: 900}">
-        <dt class="ls"><i class="am-icon-cny"></i></dt>
-        <dd>455</dd>
-        <dd class="f12">全部收入</dd>
-      </dl>
-    </div>
-    <div class="admin-biaoge">
-      <div class="xinxitj">信息概况</div>
-      <table class="am-table">
-        <thead>
-          <tr>
-            <th>团队统计</th>
-            <th>全部会员</th>
-            <th>全部未激活</th>
-            <th>今日新增</th>
-            <th>今日未激活</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>普卡</td>
-            <td>普卡</td>
-            <td><a href="#">4534</a></td>
-            <td>+20</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>银卡</td>
-            <td>银卡</td>
-            <td>4534</td>
-            <td>+2</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>金卡</td>
-            <td>金卡</td>
-            <td>4534</td>
-            <td>+10</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>钻卡</td>
-            <td>钻卡</td>
-            <td>4534</td>
-            <td>+50</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>合计</td>
-            <td>合计</td>
-            <td>4534</td>
-            <td>+50</td>
-            <td> 4534 </td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="am-table">
-        <thead>
-          <tr>
-            <th>团队统计</th>
-            <th>全部会员</th>
-            <th>全部未激活</th>
-            <th>今日新增</th>
-            <th>今日未激活</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>普卡</td>
-            <td>普卡</td>
-            <td>4534</td>
-            <td>+50</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>银卡</td>
-            <td>银卡</td>
-            <td>4534</td>
-            <td>+2</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>金卡</td>
-            <td>金卡</td>
-            <td>4534</td>
-            <td>+10</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>钻卡</td>
-            <td>钻卡</td>
-            <td>4534</td>
-            <td>+50</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>合计</td>
-            <td>合计</td>
-            <td>4534</td>
-            <td>+50</td>
-            <td> 4534 </td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="am-table">
-        <thead>
-          <tr>
-            <th>资金统计</th>
-            <th>账户总收入</th>
-            <th>账户总支出</th>
-            <th>账户余额</th>
-            <th>今日收入</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>普卡</td>
-            <td>普卡</td>
-            <td>4534</td>
-            <td>+20</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>银卡</td>
-            <td>银卡</td>
-            <td>4534</td>
-            <td>+2</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>金卡</td>
-            <td>金卡</td>
-            <td>4534</td>
-            <td>+10</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>钻卡</td>
-            <td>钻卡</td>
-            <td>4534</td>
-            <td>+50</td>
-            <td> 4534 </td>
-          </tr>
-          <tr>
-            <td>合计</td>
-            <td>合计</td>
-            <td>4534</td>
-            <td>+50</td>
-            <td> 4534 </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="shuju">
-      <div class="shujuone">
-        <dl>
-          <dt>全盘收入：  1356666</dt>
-          <dt>全盘支出：   5646465.98</dt>
-          <dt>全盘利润：  546464</dt>
-        </dl>
-        <ul>
-          <h2>26.83%</h2>
-          <li>全盘拨出</li>
-        </ul>
-      </div>
-      <div class="shujutow">
-        <dl>
-          <dt>全盘收入：  1356666</dt>
-          <dt>全盘支出：   5646465.98</dt>
-          <dt>全盘利润：  546464</dt>
-        </dl>
-        <ul>
-          <h2>26.83%</h2>
-          <li>全盘拨出</li>
-        </ul>
-      </div>
-      <div class="slideTxtBox">
-        <div class="hd">
-          <ul>
-            <li>其他信息</li>
-            <li>工作进度表</li>
-          </ul>
+                    <!-- Main row -->
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <!--earning graph start-->
+                            <section class="panel">
+                                <header class="panel-heading">
+                                    收益图
+                                </header>
+                                <div class="panel-body">
+                                    <canvas id="linechart" width="600" height="330"></canvas>
+                                </div>
+                                        </section>
+                                        <!--earning graph end-->
+
+                                    </div>
+                                    <div class="col-lg-4">
+
+                                        <!--chat start-->
+                                        <section class="panel">
+                                            <header class="panel-heading">
+                                                未处理信息
+                                            </header>
+                                                <div class="panel-body" id="noti-box">
+
+                                                    <div class="alert alert-block alert-danger">
+                                                        <button data-dismiss="alert" class="close close-sm" type="button">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                                    </div>
+                                                    <div class="alert alert-success">
+                                                        <button data-dismiss="alert" class="close close-sm" type="button">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                        <strong>Well done!</strong> You successfully read this important alert message.
+                                                    </div>
+                                                    <div class="alert alert-info">
+                                                        <button data-dismiss="alert" class="close close-sm" type="button">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                                                    </div>
+                                                    <div class="alert alert-warning">
+                                                        <button data-dismiss="alert" class="close close-sm" type="button">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+                                                    </div>
+
+
+                                                    <div class="alert alert-block alert-danger">
+                                                        <button data-dismiss="alert" class="close close-sm" type="button">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                                    </div>
+                                                    <div class="alert alert-success">
+                                                        <button data-dismiss="alert" class="close close-sm" type="button">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                        <strong>Well done!</strong> You successfully read this important alert message.
+                                                    </div>
+                                                    <div class="alert alert-info">
+                                                        <button data-dismiss="alert" class="close close-sm" type="button">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                                                    </div>
+                                                    <div class="alert alert-warning">
+                                                        <button data-dismiss="alert" class="close close-sm" type="button">
+                                                            <i class="fa fa-times"></i>
+                                                        </button>
+                                                        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+                                                    </div>
+
+
+
+                                                </div>
+                                        </section>
+
+
+
+                      </div>
+
+
+                  </div>
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <section class="panel">
+                              <header class="panel-heading">
+                                  Work Progress
+                            </header>
+                            <div class="panel-body table-responsive">
+                                <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>#</th>
+                                      <th>Project</th>
+                                      <th>Manager</th>
+                                      <!-- <th>Client</th> -->
+                                      <th>Deadline</th>
+                                      <!-- <th>Price</th> -->
+                                      <th>Status</th>
+                                      <th>Progress</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>Facebook</td>
+                                  <td>Mark</td>
+                                  <!-- <td>Steve</td> -->
+                                  <td>10/10/2014</td>
+                                  <!-- <td>$1500</td> -->
+                                  <td><span class="label label-danger">in progress</span></td>
+                                  <td><span class="badge badge-info">50%</span></td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>Twitter</td>
+                                  <td>Evan</td>
+                                  <!-- <td>Darren</td> -->
+                                  <td>10/8/2014</td>
+                                  <!-- <td>$1500</td> -->
+                                  <td><span class="label label-success">completed</span></td>
+                                  <td><span class="badge badge-success">100%</span></td>
+                              </tr>
+                              <tr>
+                                  <td>3</td>
+                                  <td>Google</td>
+                                  <td>Larry</td>
+                                  <!-- <td>Nick</td> -->
+                                  <td>10/12/2014</td>
+                                  <!-- <td>$2000</td> -->
+                                  <td><span class="label label-warning">in progress</span></td>
+                                  <td><span class="badge badge-warning">75%</span></td>
+                              </tr>
+                              <tr>
+                                  <td>4</td>
+                                  <td>LinkedIn</td>
+                                  <td>Allen</td>
+                                  <!-- <td>Rock</td> -->
+                                  <td>10/01/2015</td>
+                                  <!-- <td>$2000</td> -->
+                                  <td><span class="label label-info">in progress</span></td>
+                                  <td><span class="badge badge-info">65%</span></td>
+                              </tr>
+                              <tr>
+                                  <td>5</td>
+                                  <td>Tumblr</td>
+                                  <td>David</td>
+                                  <!-- <td>HHH</td> -->
+                                  <td>01/11/2014</td>
+                                  <!-- <td>$2000</td> -->
+                                  <td><span class="label label-warning">in progress</span></td>
+                                  <td><span class="badge badge-danger">95%</span></td>
+                              </tr>
+                              <tr>
+                                  <td>6</td>
+                                  <td>Tesla</td>
+                                  <td>Musk</td>
+                                  <!-- <td>HHH</td> -->
+                                  <td>01/11/2014</td>
+                                  <!-- <td>$2000</td> -->
+                                  <td><span class="label label-info">in progress</span></td>
+                                  <td><span class="badge badge-success">95%</span></td>
+                              </tr>
+                              <tr>
+                                  <td>7</td>
+                                  <td>Ghost</td>
+                                  <td>XXX</td>
+                                  <!-- <td>HHH</td> -->
+                                  <td>01/11/2014</td>
+                                  <!-- <td>$2000</td> -->
+                                  <td><span class="label label-info">in progress</span></td>
+                                  <td><span class="badge badge-success">95%</span></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </section>
+
+
+          </div><!--end col-6 -->
+          <div class="col-md-4">
+            <section class="panel">
+                <header class="panel-heading">
+                    Twitter Feed
+                </header>
+                <div class="panel-body">
+                    <div class="twt-area">
+                        <form action="#" method="post">
+                            <textarea class="form-control" name="profile-tweet" placeholder="Share something on Twitter.." rows="3"></textarea>
+
+                            <div class="clearfix">
+                                <button class="btn btn-sm btn-primary pull-right" type="submit">
+                                    <i class="fa fa-twitter"></i>
+                                    Tweet
+                                </button>
+                                <a class="btn btn-link btn-icon fa fa-location-arrow" data-original-title="Add Location" data-placement="bottom" data-toggle="tooltip" href=
+                                "#" style="text-decoration:none;" title=""></a>
+                                <a class="btn btn-link btn-icon fa fa-camera" data-original-title="Add Photo" data-placement="bottom" data-toggle="tooltip" href="#"
+                                style="text-decoration:none;" title=""></a>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="media-list">
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <img src="/static/admin/img/26115.jpg" alt="Avatar" class="img-circle" width="64" height="64">
+                            </a>
+                            <div class="media-body">
+                                <span class="text-muted pull-right">
+                                    <small><em>30 min ago</em></small>
+                                </span>
+                                <a href="page_ready_user_profile.php">
+                                    <strong>John Doe</strong>
+                                </a>
+                                <p>
+                                    In hac <a href="#">habitasse</a> platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend.
+                                    <a href="#" class="text-danger">
+                                        <strong>#dev</strong>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <img src="/static/admin/img/26115.jpg" alt="Avatar" class="img-circle" width="64" height="64">
+                            </a>
+                            <div class="media-body">
+                                <span class="text-muted pull-right">
+                                    <small><em>30 min ago</em></small>
+                                </span>
+                                <a href="page_ready_user_profile.php">
+                                    <strong>John Doe</strong>
+                                </a>
+                                <p>
+                                    In hac <a href="#">habitasse</a> platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend.
+                                    <a href="#" class="text-danger">
+                                        <strong>#design</strong>
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-        <div class="bd">
-          <ul>
-            <table width="100%" class="am-table">
-              <tbody>
-                <tr>
-                  <td width="7%"  align="center">1 </td>
-                  <td width="83%" >工作进度名称</td>
-                  <td width="10%"  align="center"><a href="#">10%</a></td>
-                </tr>
-                <tr>
-                  <td align="center">1 </td>
-                  <td>工作进度名称</td>
-                  <td  align="center"><a href="#">10%</a></td>
-                </tr>
-                <tr>
-                  <td  align="center">1 </td>
-                  <td>工作进度名称</td>
-                  <td  align="center"><a href="#">10%</a></td>
-                </tr>
-                <tr>
-                  <td  align="center">1 </td>
-                  <td>工作进度名称</td>
-                  <td  align="center"><a href="#">10%</a></td>
-                </tr>
-                
-                <tr>
-                  <td  align="center">1 </td>
-                  <td>工作进度名称</td>
-                  <td  align="center"><a href="#">10%</a></td>
-                </tr>
-                
-                <tr>
-                  <td  align="center">1 </td>
-                  <td>工作进度名称</td>
-                  <td  align="center"><a href="#">10%</a></td>
-                </tr>
-                
-                <tr>
-                  <td  align="center">1 </td>
-                  <td>工作进度名称</td>
-                  <td  align="center"><a href="#">10%</a></td>
-                </tr>
-                
-                
-                
-                
-                
-                
-                
-                
-              </tbody>
-            </table>
-          </ul>
-          <ul>
-            <table class="am-table">
-              <tbody>
-                <tr>
-                  <td>普卡</td>
-                  <td>普卡</td>
-                  <td><a href="#">4534</a></td>
-                  <td>+20</td>
-                  <td> 4534 </td>
-                </tr>
-                <tr>
-                  <td>银卡</td>
-                  <td>银卡</td>
-                  <td>4534</td>
-                  <td>+2</td>
-                  <td> 4534 </td>
-                </tr>
-                <tr>
-                  <td>金卡</td>
-                  <td>金卡</td>
-                  <td>4534</td>
-                  <td>+10</td>
-                  <td> 4534 </td>
-                </tr>
-                <tr>
-                  <td>钻卡</td>
-                  <td>钻卡</td>
-                  <td>4534</td>
-                  <td>+50</td>
-                  <td> 4534 </td>
-                </tr>
-                <tr>
-                  <td>合计</td>
-                  <td>合计</td>
-                  <td>4534</td>
-                  <td>+50</td>
-                  <td> 4534 </td>
-                </tr>
-              </tbody>
-            </table>
-          </ul>
-        </div>
-      </div>
-      <script type="text/javascript">jQuery(".slideTxtBox").slide();</script> 
-   
-   
-   
-   
-   
-   
-   
-   
-</div>
 
-    <div class="foods">
-    	<ul>版权所有@2015 .模板收集自 <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> -  More Templates<a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></ul>
-    	<dl><a href="" title="返回头部" class="am-icon-btn am-icon-arrow-up"></a></dl>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="panel">
+                                <header class="panel-heading">
+                                    Teammates
+                                </header>
+
+                                <ul class="list-group teammates">
+                                    <li class="list-group-item">
+                                        <a href=""><img src="/static/admin/img/26115.jpg" width="50" height="50"></a>
+                                        <span class="pull-right label label-danger inline m-t-15">Admin</span>
+                                        <a href="">Damon Parker</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href=""><img src="/static/admin/img/26115.jpg"  width="50" height="50"></a>
+                                        <span class="pull-right label label-info inline m-t-15">Member</span>
+                                        <a href="">Joe Waston</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href=""><img src="/static/admin/img/26115.jpg"  width="50" height="50"></a>
+                                        <span class="pull-right label label-warning inline m-t-15">Editor</span>
+                                        <a href="">Jannie Dvis</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href=""><img src="/static/admin/img/26115.jpg"  width="50" height="50"></a>
+                                        <span class="pull-right label label-warning inline m-t-15">Editor</span>
+                                        <a href="">Emma Welson</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href=""><img src="/static/admin/img/26115.jpg"  width="50" height="50"></a>
+                                        <span class="pull-right label label-success inline m-t-15">Subscriber</span>
+                                        <a href="">Emma Welson</a>
+                                    </li>
+                                </ul>
+                                <div class="panel-footer bg-white">
+                                    <!-- <span class="pull-right badge badge-info">32</span> -->
+                                    <button class="btn btn-primary btn-addon btn-sm">
+                                        <i class="fa fa-plus"></i>
+                                        Add Teammate
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                          <section class="panel tasks-widget">
+                              <header class="panel-heading">
+                                  Todo list
+                            </header>
+                            <div class="panel-body">
+
+                              <div class="task-content">
+
+                                  <ul class="task-list">
+                                      <li>
+                                          <div class="task-checkbox">
+                                              <!-- <input type="checkbox" class="list-child" value=""  /> -->
+                                              <input type="checkbox" class="flat-grey list-child"/>
+                                              <!-- <input type="checkbox" class="square-grey"/> -->
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">Director is Modern Dashboard</span>
+                                              <span class="label label-success">2 Days</span>
+                                              <div class="pull-right hidden-phone">
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-check"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-times"></i></button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="task-checkbox">
+                                              <!-- <input type="checkbox" class="list-child" value=""  /> -->
+                                              <input type="checkbox" class="flat-grey"/>
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">Fully Responsive & Bootstrap 3.0.2 Compatible</span>
+                                              <span class="label label-danger">Done</span>
+                                              <div class="pull-right hidden-phone">
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-check"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-times"></i></button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="task-checkbox">
+                                              <!-- <input type="checkbox" class="list-child" value=""  /> -->
+                                              <input type="checkbox" class="flat-grey"/>
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">Latest Design Concept</span>
+                                              <span class="label label-warning">Company</span>
+                                              <div class="pull-right hidden-phone">
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-check"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-times"></i></button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="task-checkbox">
+                                              <!-- <input type="checkbox" class="list-child" value=""  /> -->
+                                              <input type="checkbox" class="flat-grey"/>
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">Write well documentation for this theme</span>
+                                              <span class="label label-primary">3 Days</span>
+                                              <div class="pull-right hidden-phone">
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-check"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-times"></i></button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="task-checkbox">
+                                              <!-- <input type="checkbox" class="list-child" value=""  /> -->
+                                              <input type="checkbox" class="flat-grey"/>
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">Don't bother to download this Dashbord</span>
+                                              <span class="label label-inverse">Now</span>
+                                              <div class="pull-right">
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-check"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-times"></i></button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="task-checkbox">
+                                              <!-- <input type="checkbox" class="list-child" value=""  /> -->
+                                              <input type="checkbox" class="flat-grey"/>
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">Give feedback for the template</span>
+                                              <span class="label label-success">2 Days</span>
+                                              <div class="pull-right hidden-phone">
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-check"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-times"></i></button>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="task-checkbox">
+                                              <!-- <input type="checkbox" class="list-child" value=""  /> -->
+                                              <input type="checkbox" class="flat-grey"/>
+                                          </div>
+                                          <div class="task-title">
+                                              <span class="task-title-sp">Tell your friends about this admin template</span>
+                                              <span class="label label-danger">Now</span>
+                                              <div class="pull-right hidden-phone">
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-check"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-pencil"></i></button>
+                                                  <button class="btn btn-default btn-xs"><i class="fa fa-times"></i></button>
+                                              </div>
+                                          </div>
+                                      </li>
+
+                                  </ul>
+                              </div>
+
+                              <div class=" add-task-row">
+                                  <a class="btn btn-success btn-sm pull-left" href="#">Add New Tasks</a>
+                                  <a class="btn btn-default btn-sm pull-right" href="#">See All Tasks</a>
+                              </div>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+              <!-- row end -->
+                </section><!-- /.content -->
+                <div class="footer-main">
+                    Copyright &copy Director, 2014. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+                </div>
+            </aside><!-- /.right-side -->
+
+        </div><!-- ./wrapper -->
 
 
-    	
-    </div>
+        <!-- jQuery 2.0.2 -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="/static/admin/js/jquery.min.js" type="text/javascript"></script>
 
+        <!-- jQuery UI 1.10.3 -->
+        <script src="/static/admin/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+        <!-- Bootstrap -->
+        <script src="/static/admin/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- daterangepicker -->
+        <script src="/static/admin/js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
 
+        <script src="/static/admin/js/plugins/chart.js" type="text/javascript"></script>
 
+        <!-- datepicker
+        <script src="js/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>-->
+        <!-- Bootstrap WYSIHTML5
+        <script src="js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>-->
+        <!-- iCheck -->
+        <script src="/static/admin/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+        <!-- calendar -->
+        <script src="/static/admin/js/plugins/fullcalendar/fullcalendar.js" type="text/javascript"></script>
 
+        <!-- Director App -->
+        <script src="/static/admin/js/Director/app.js" type="text/javascript"></script>
 
+        <!-- Director dashboard demo (This is only for demo purposes) -->
+        <script src="/static/admin/js/Director/dashboard.js" type="text/javascript"></script>
 
+        <!-- Director for demo purposes -->
+        <script type="text/javascript">
+            $('input').on('ifChecked', function(event) {
+                // var element = $(this).parent().find('input:checkbox:first');
+                // element.parent().parent().parent().addClass('highlight');
+                $(this).parents('li').addClass("task-done");
+                console.log('ok');
+            });
+            $('input').on('ifUnchecked', function(event) {
+                // var element = $(this).parent().find('input:checkbox:first');
+                // element.parent().parent().parent().removeClass('highlight');
+                $(this).parents('li').removeClass("task-done");
+                console.log('not');
+            });
 
-</div>
+        </script>
+        <script>
+            $('#noti-box').slimScroll({
+                height: '400px',
+                size: '5px',
+                BorderRadius: '5px'
+            });
 
-</div>
+            $('input[type="checkbox"].flat-grey, input[type="radio"].flat-grey').iCheck({
+                checkboxClass: 'icheckbox_flat-grey',
+                radioClass: 'iradio_flat-grey'
+            });
+</script>
+<script type="text/javascript">
+    $(function() {
+                "use strict";
+                //BAR CHART
+                var data = {
+                    labels: ["January", "February", "March", "April", "May", "June", "July"],
+                    datasets: [
+                        {
+                            label: "My First dataset",
+                            fillColor: "rgba(220,220,220,0.2)",
+                            strokeColor: "rgba(220,220,220,1)",
+                            pointColor: "rgba(220,220,220,1)",
+                            pointStrokeColor: "#fff",
+                            pointHighlightFill: "#fff",
+                            pointHighlightStroke: "rgba(220,220,220,1)",
+                            data: [65, 59, 80, 81, 56, 55, 40]
+                        },
+                        {
+                            label: "My Second dataset",
+                            fillColor: "rgba(151,187,205,0.2)",
+                            strokeColor: "rgba(151,187,205,1)",
+                            pointColor: "rgba(151,187,205,1)",
+                            pointStrokeColor: "#fff",
+                            pointHighlightFill: "#fff",
+                            pointHighlightStroke: "rgba(151,187,205,1)",
+                            data: [28, 48, 40, 19, 86, 27, 90]
+                        }
+                    ]
+                };
+            new Chart(document.getElementById("linechart").getContext("2d")).Line(data,{
+                responsive : true,
+                maintainAspectRatio: false,
+            });
 
-
-
-
-</div>
-
-<!--[if lt IE 9]>
-<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="/static/assets/js/polyfill/rem.min.js"></script>
-<script src="/static/assets/js/polyfill/respond.min.js"></script>
-<script src="/static/assets/js/amazeui.legacy.js"></script>
-<![endif]--> 
-
-<!--[if (gte IE 9)|!(IE)]><!--> 
-<script src="/static/assets/js/amazeui.min.js"></script>
-<!--<![endif]-->
-
-
-
+            });
+            // Chart.defaults.global.responsive = true;
+</script>
 </body>
 </html>
