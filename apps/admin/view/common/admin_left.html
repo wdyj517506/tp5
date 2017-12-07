@@ -24,26 +24,29 @@
                             <!-- /.search form -->
                             <!-- sidebar menu: : style can be found in sidebar.less -->
                             <ul class="sidebar-menu">
-                                <li class="active">
-                                    <a href="index.html">
+                                <li {if $name=='user'}class="active"{/if}>
+                                    <a href="/admin/user">
                                         <i class="fa fa-dashboard"></i> <span>用户及用户组</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="general.html">
-                                        <i class="fa fa-gavel"></i> <span>模块分类</span>
+                                <li {if $name=='general'}class="active"{/if}>
+                                    <a href="/admin/general">
+                                        <i class="fa fa-gavel"></i> <span>操作模块</span>
                                     </a>
                                 </li>
-
-                                <li>
-                                    <a href="basic_form.html">
+								<li {if $name=='general'}class="active"{/if}>
+                                    <a href="/admin/general">
+                                        <i class="glyphicon glyphicon-send"></i> <span>内容分类</span>
+                                    </a>
+                                </li>
+                                <li {if $name=='basic'}class="active"{/if}>
+                                    <a href="/admin/basic">
                                         <i class="fa fa-globe"></i> <span>内容管理</span>
                                     </a>
                                 </li>
-
-                                <li>
-                                    <a href="simple.html">
-                                        <i class="fa fa-glass"></i> <span>系统设置</span>
+                                <li {if $name=='simple'}class="active"{/if}>
+                                    <a href="/admin/simple">
+                                        <i class="glyphicon glyphicon-asterisk"></i> <span>系统设置</span>
                                     </a>
                                 </li>
 

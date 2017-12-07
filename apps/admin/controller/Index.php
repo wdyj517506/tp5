@@ -10,6 +10,7 @@ class Index extends Controller
     {
 		// $member = Db::name('member')->find();
 		// $this->assign('member', $member);
+		$this->assign('name', $name);
         return $this->fetch('index/'.$name);
     }
 }
